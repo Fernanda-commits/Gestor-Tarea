@@ -11,12 +11,16 @@
 
 </head>
 <body>
-    <ul>
-        {% for tarea in tareas %} 
-        <h5>{{tarea.titulo}}</h5>
-        <p>{{tarea.descripcion}}</p>
-        <p>{{tarea.estado}}</p>
+    <ul class="my-5">
+        {% for tarea in tareas %}
+        <div class="border border-3">
+            <h5>{{tarea.titulo}}</h5>
+            <p>{{tarea.descripcion}}</p>
+            <p>{{tarea.estado}}</p>
+        </div> 
         {% endfor %}
+        <a href="crear">Crear tarea</a>
     </ul>  
+    
 </body>
 </html>
